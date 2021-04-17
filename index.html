@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>fulptube-dl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Download FulpTube videos">
+  <link rel="icon" type="image/png" href="http://fulptube.rocks/favicon.ico" />
+  <link rel="shortcut icon" type="image/png" href="http://fulptube.rocks/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>fulptube-dl</h1>
+      <p><b>Easily download FulpTube videos.</b></p>
+      <hr>
+    </header>
+    <div id="contentMain">
+      <div id="dlWidget">
+        <p><b>Paste FulpTube video URL below:</b></p>
+        <form onsubmit="FULPTUBE_DL.fetchVideo(event); return false;">
+          <input type="text" id="urlField" placeholder="https://fulptube.rocks/watch?v=">
+          <input type="submit">
+        </form>
+      </div>
+      <br>
+      <div id="dlOutput">
+        <p><b>Video preview:</b></p>
+        <video id="videoPreview" autoplay></video>
+        <a id="videoDownload"><button>Download video</button></a>
+      </div>
+    </div>
+    <footer>
+      <hr>
+        <ul>
+          <li>By Literal Line</li>
+          <li>Source code:&nbsp;<a class="hover au" href="https://github.com/quique-gq/fulptube-dl" target="_blank">Github</a></li>
+          <li>more at <a class="hover au" href="https://quique.gq" target="_blank">Quique.gq</a></li>
+        </ul>
+    </footer>
+  </main>
+  <script src="./fulptube-dl.js"></script>
+</body>
+</html>

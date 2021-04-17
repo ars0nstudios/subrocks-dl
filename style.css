@@ -1,0 +1,72 @@
+body {
+  background: #000000;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+main {
+  background: #FFFFFF;
+  display: inline-block;
+  position: relative;
+  width: 100vw;
+  height: 99vh;
+  max-width: 800px;
+  overflow-y: auto;
+}
+
+#contentMain {
+  position: relative;
+  min-height: 80%;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+footer > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer > ul > li {
+  padding: 0;
+  margin: 0 10px 0 10px;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+#dlWidget {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 25px;
+  display: inline-block;
+}
+
+#dlWidget > form {
+  margin: 10px;
+}
+
+#dlOutput {
+  display: none;
+}
+
+#dlWidget, #dlOutput {
+  margin: 25px;
+}
+
+#videoPreview {
+  background: #000000;
+  margin: 25px auto 25px auto;
+  display: block;
+  width: 80%;
+}
+
+#videoDownload > button {
+  font-size: 48px;
+}
