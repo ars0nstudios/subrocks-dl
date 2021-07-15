@@ -17,7 +17,7 @@ main {
 
 #contentMain {
   position: relative;
-  min-height: 80%;
+  min-height: calc(100% - 184px);
 }
 
 footer {
